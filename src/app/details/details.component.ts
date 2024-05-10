@@ -9,7 +9,6 @@ import { HousingLocation } from "../housing-location";
   standalone: true,
   imports: [CommonModule],
   template: `
-    <!-- <p>details works! {{ housingLocation?.id }}</p>  -->
     <article>
       <img class="listing-photo" [src]="housingLocation?.photo" />
       <section class="listing-description">
@@ -21,12 +20,14 @@ import { HousingLocation } from "../housing-location";
       <section class="listing-features">
         <h2 class="section-heading">About this housing location</h2>
         <ul>
-          <!-- <li>Units availabe: {{housingLocation.?availableUnits}}</li> -->
-          <!-- <li>Does this location wifi: {{housingLocation.?wifi}}</li> -->
+          <li>Units availabe: {{ housingLocation?.availableUnits }}</li>
+          <li>Does this location wifi: {{ housingLocation?.wifi }}</li>
+          <li>Laundry: {{housingLocation?.laundry}}</li>
         </ul>
       </section>
       <section class="section-apply">
-        <h2 class="section-heading"></h2>
+        <h2 class="section-heading">Apply now to live hear</h2>
+        <button class="primary" type="button">Apply</button>
       </section>
     </article>
   `,
