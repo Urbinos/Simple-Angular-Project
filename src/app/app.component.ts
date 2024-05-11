@@ -14,10 +14,9 @@ import { RouterModule } from "@angular/router";
         alt="logo"
         aria-hidden="true"
       />
-    </header> 
+    </header>
     <section class="content">
       <router-outlet></router-outlet>
-      <!-- <app-home></app-home> -->
     </section>
   </main>`,
   styleUrls: ["./app.component.css"],
