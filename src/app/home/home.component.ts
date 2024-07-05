@@ -49,8 +49,9 @@ export class HomeComponent {
   filterResults(text: string) {
     if (!text) {
       this.filteredLocationList = this.housingLocationList;
-      return;
+      // return;
     }
+    console.log("filter", text);
     this.filteredLocationList = this.housingLocationList.filter((housingLocation) =>
       housingLocation?.city.toLowerCase().includes(text.toLowerCase())
     );
